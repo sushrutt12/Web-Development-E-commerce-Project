@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-configuration PUBLIC "-//Hibernate/Hibernate Configuration DTD 3.0//EN"
+                                         "http://hibernate.sourceforge.net/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+	<session-factory>
+		<property name="hibernate.connection.driver_class">com.mysql.jdbc.Driver</property>
+		<property name="hibernate.connection.url">jdbc:mysql://localhost:3306/final_project</property>
+		<property name="hibernate.connection.username">root</property>
+		<property name="hibernate.connection.password">6969</property>
+		<property name="hibernate.hbm2ddl.auto">update</property>
+		<property name="hibernate.dialect">org.hibernate.dialect.MySQL5Dialect</property>
+		<property name="hibernate.show_sql">true</property>
+
+		<mapping class="com.my.spring.pojo.Retailer" />
+		<mapping class="com.my.spring.pojo.Customer" />
+		<mapping class="com.my.spring.pojo.Email" />
+		<mapping class="com.my.spring.pojo.Person" />
+		<mapping class="com.my.spring.pojo.Product" />
+		<mapping class="com.my.spring.pojo.Category" />
+		<mapping class="com.my.spring.pojo.Rating" />
+		<mapping class="com.my.spring.pojo.Order" />
+		<mapping class="com.my.spring.pojo.OrderItem" />
+
+
+	</session-factory>
+</hibernate-configuration>

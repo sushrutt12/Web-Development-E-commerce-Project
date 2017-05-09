@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+<bean id="multipartResolver" class="org.springframework.web.multipart.commons.CommonsMultipartResolver">
+        <!-- one of the properties available; the maximum file size in bytes -->
+        <property name="maxUploadSize" value="50000000" />
+    </bean>
+	<!-- Root Context: defines shared resources visible to all other web components -->
+	
+	<bean id="customerValidator" class="com.my.spring.validator.CustomerValidator"></bean>
+	<bean id="retailerValidator" class="com.my.spring.validator.RetailerValidator"></bean>
+	<bean id="emailDao" class="com.my.spring.dao.EmailDAO" ></bean>
+	<bean id="personDao" class="com.my.spring.dao.PersonDAO" ></bean>
+	<bean id="retailerDao" class="com.my.spring.dao.RetailerDAO" ></bean>
+	<bean id="customerDao" class="com.my.spring.dao.CustomerDAO" ></bean>
+	<bean id="adminDao" class="com.my.spring.dao.AdminDAO" ></bean>
+	
+	<bean id="categoryValidator" class="com.my.spring.validator.CategoryValidator"></bean>
+	<bean id="categoryDao" class="com.my.spring.dao.CategoryDAO" ></bean>
+	
+	<bean id="productValidator" class="com.my.spring.validator.ProductValidator"></bean>
+	<bean id="productDao" class="com.my.spring.dao.ProductDAO" ></bean>
+	
+	<bean id="cartDao" class="com.my.spring.dao.CartDAO" ></bean>
+	
+	<bean id="orderDao" class="com.my.spring.dao.OrderDAO" ></bean>
+	<bean id="orderItemDao" class="com.my.spring.dao.OrderItemDAO" ></bean>
+	<bean id="ratingDao" class="com.my.spring.dao.RatingDAO" ></bean>
+	
+	
+<!-- Used to access these throughout the application -->
+
+
+</beans>
