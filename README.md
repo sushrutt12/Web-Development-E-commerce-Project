@@ -8,5 +8,25 @@
 - hibernate.connection.password>Enter password of the authorized username of the database here<
 ### in PublicViewController look for the following comment and change the email address and password of the account which will send successful registration emails
 //-------------------------------EMAIL------------------
+
+### in ProductController
+set the value of "String path" here with a folder which exists. This is where the images will be stored.
+
 ## Here are a few screenshots of the web pages. Due to shortage of time the front end hasn't been worked on much.
+
+Login Page:
+![alt text](https://github.com/sushrutt12/Web-Development-E-commerce-Project/blob/master/Final_Project/login.jpg "Login Page")
+
+Order Page:
+![alt text](https://github.com/sushrutt12/Web-Development-E-commerce-Project/blob/master/Final_Project/order.jpg "Order Page")
+
+Product View:
+![alt text](https://github.com/sushrutt12/Web-Development-E-commerce-Project/blob/master/Final_Project/product_view.jpg "Product View")
+
+Report:
+![alt text](https://github.com/sushrutt12/Web-Development-E-commerce-Project/blob/master/Final_Project/report.jpg "Report")
+
+Retailer Landing:
+![alt text](https://github.com/sushrutt12/Web-Development-E-commerce-Project/blob/master/Final_Project/retailer%20landing.jpg "Retailer Landing")
+
 
