@@ -358,12 +358,12 @@ public class PublicViewController {
 	    Session session = Session.getInstance(props,
 	  		  new javax.mail.Authenticator() {
 	  			protected PasswordAuthentication getPasswordAuthentication() {
-	  				return new PasswordAuthentication("webtools.testmailer@gmail.com", "sushrut123");
+	  				return new PasswordAuthentication("app-email@gmail.com", "sushrut123456");
 	  			}
 	  		  });
 	    try {
 	        MimeMessage msg = new MimeMessage(session);
-	        msg.setFrom(new InternetAddress("webtools.testmailer@gmail.com"));
+	        msg.setFrom(new InternetAddress("app-email@gmail.com"));
 	        msg.setRecipients(Message.RecipientType.TO,
                     email);
 	        msg.setSubject("Registration");
